@@ -24,6 +24,27 @@
     padding: 8px
     overflow-x: auto
 
+.dataRow
+    &:hover
+        position: relative
+        z-index: 4
+        transform: translateY(-1px)
+        background-color: var(--glass-background-color)
+        backdrop-filter: var(--glass-backdrop-filter)
+        border-radius: calc(var(--glass-border-radius) - 4px)
+        box-shadow: var(--glass-tr-box-shadow)
+
+        th, td
+            border-bottom-color: transparent
+
+            &:first-child
+                border-bottom-left-radius: 8px
+                border-top-left-radius: 8px
+
+            &:last-child
+                border-bottom-right-radius: 8px
+                border-top-right-radius: 8px
+
 .red
     background-color: var(--color-red-alpha)
 
