@@ -2,10 +2,11 @@ import styles from './Topbar.module.sass'
 
 import { useLayoutEffect, MouseEvent, RefObject, useRef } from 'react'
 import { useMediaQuery } from 'react-responsive'
-import { useScrollTo } from '@/hooks/useScrollTo'
 import { useSidebar } from '@components/Sidebar/SidebarProvider'
 
 import clsx from '@/utils/clsx'
+import getNavBarHeight from '@utils/getNavBarHeight'
+import scrollTo from '@utils/scrollTo'
 import Brand from '@components/Brand/Brand'
 import ThemeSwitch from '@components/ThemeSwitch/ThemeSwitch'
 import Github from '@icons/Github'
@@ -16,7 +17,6 @@ interface TopbarProps {
 
 export default function Topbar({ forwardedRef }: TopbarProps) {
     const ref = useRef<HTMLElement | null>(null)
-    const scrollToTop = useScrollTo({ selector: 'main' })
     const { isSidebarOpen, toggleSidebar } = useSidebar()
     const isScreenMd = useMediaQuery({ maxWidth: 768 })
 
@@ -42,7 +42,7 @@ export default function Topbar({ forwardedRef }: TopbarProps) {
     const handleTitleClick = (event: MouseEvent<HTMLAnchorElement>) => {
         event.preventDefault()
         window.history.replaceState({}, '', window.location.pathname)
-        scrollToTop()
+        scrollTo('main', getNavBarHeight() - 2)
     }
     const handleHamburgerClick = () => toggleSidebar()
 
