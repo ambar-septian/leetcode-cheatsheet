@@ -47,15 +47,25 @@ import CheckPowerOfTwoCPP from '@code/cpp/bit_manipulation/check_power_of_two.cp
 import SwapVariablesCPP from '@code/cpp/bit_manipulation/swap_variables.cpp?raw'
 
 import TestKthBitRuby from '@code/ruby/bit_manipulation/test_kth_bit.rb?raw'
+import TestKthBitSwift from '@code/swift/bit_manipulation/test_kth_bit.swift?raw'
 import SetKthBitRuby from '@code/ruby/bit_manipulation/set_kth_bit.rb?raw'
+import SetKthBitSwift from '@code/swift/bit_manipulation/set_kth_bit.swift?raw'
 import ClearKthBitRuby from '@code/ruby/bit_manipulation/clear_kth_bit.rb?raw'
+import ClearKthBitSwift from '@code/swift/bit_manipulation/clear_kth_bit.swift?raw'
 import ToggleKthBitRuby from '@code/ruby/bit_manipulation/toggle_kth_bit.rb?raw'
+import ToggleKthBitSwift from '@code/swift/bit_manipulation/toggle_kth_bit.swift?raw'
 import GetRightmostBitRuby from '@code/ruby/bit_manipulation/get_rightmost_bit.rb?raw'
+import GetRightmostBitSwift from '@code/swift/bit_manipulation/get_rightmost_bit.swift?raw'
 import CountSetBitsRuby from '@code/ruby/bit_manipulation/count_set_bits.rb?raw'
+import CountSetBitsSwift from '@code/swift/bit_manipulation/count_set_bits.swift?raw'
 import MultiplyByPowerOfTwoRuby from '@code/ruby/bit_manipulation/multiply_power_of_two.rb?raw'
+import MultiplyByPowerOfTwoSwift from '@code/swift/bit_manipulation/multiply_power_of_two.swift?raw'
 import DivideByPowerOfTwoRuby from '@code/ruby/bit_manipulation/divide_power_of_two.rb?raw'
+import DivideByPowerOfTwoSwift from '@code/swift/bit_manipulation/divide_power_of_two.swift?raw'
 import CheckPowerOfTwoRuby from '@code/ruby/bit_manipulation/check_power_of_two.rb?raw'
+import CheckPowerOfTwoSwift from '@code/swift/bit_manipulation/check_power_of_two.swift?raw'
 import SwapVariablesRuby from '@code/ruby/bit_manipulation/swap_variables.rb?raw'
+import SwapVariablesSwift from '@code/swift/bit_manipulation/swap_variables.swift?raw'
 
 export default function BitManipulation() {
     return (
@@ -68,6 +78,7 @@ export default function BitManipulation() {
                     <Tabs.Tab code={TestKthBitJAVA} language="java" />
                     <Tabs.Tab code={TestKthBitCPP} language="cpp" />
                     <Tabs.Tab code={TestKthBitRuby} language="ruby" />
+                    <Tabs.Tab code={TestKthBitSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="bitmanipulation-set-kth-bit">
@@ -77,6 +88,7 @@ export default function BitManipulation() {
                     <Tabs.Tab code={SetKthBitJAVA} language="java" />
                     <Tabs.Tab code={SetKthBitCPP} language="cpp" />
                     <Tabs.Tab code={SetKthBitRuby} language="ruby" />
+                    <Tabs.Tab code={SetKthBitSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="bitmanipulation-clear-kth-bit">
@@ -86,6 +98,7 @@ export default function BitManipulation() {
                     <Tabs.Tab code={ClearKthBitJAVA} language="java" />
                     <Tabs.Tab code={ClearKthBitCPP} language="cpp" />
                     <Tabs.Tab code={ClearKthBitRuby} language="ruby" />
+                    <Tabs.Tab code={ClearKthBitSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="bitmanipulation-toggle-kth-bit">
@@ -95,6 +108,7 @@ export default function BitManipulation() {
                     <Tabs.Tab code={ToggleKthBitJAVA} language="java" />
                     <Tabs.Tab code={ToggleKthBitCPP} language="cpp" />
                     <Tabs.Tab code={ToggleKthBitRuby} language="ruby" />
+                    <Tabs.Tab code={ToggleKthBitSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="bitmanipulation-get-rightmost-bit">
@@ -104,6 +118,7 @@ export default function BitManipulation() {
                     <Tabs.Tab code={GetRightmostBitJAVA} language="java" />
                     <Tabs.Tab code={GetRightmostBitCPP} language="cpp" />
                     <Tabs.Tab code={GetRightmostBitRuby} language="ruby" />
+                    <Tabs.Tab code={GetRightmostBitSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="bitmanipulation-count-set-bits">
@@ -113,6 +128,7 @@ export default function BitManipulation() {
                     <Tabs.Tab code={CountSetBitsJAVA} language="java" />
                     <Tabs.Tab code={CountSetBitsCPP} language="cpp" />
                     <Tabs.Tab code={CountSetBitsRuby} language="ruby" />
+                    <Tabs.Tab code={CountSetBitsSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="bitmanipulation-multiply-power-of-two">
@@ -122,6 +138,7 @@ export default function BitManipulation() {
                     <Tabs.Tab code={MultiplyByPowerOfTwoJAVA} language="java" />
                     <Tabs.Tab code={MultiplyByPowerOfTwoCPP} language="cpp" />
                     <Tabs.Tab code={MultiplyByPowerOfTwoRuby} language="ruby" />
+                    <Tabs.Tab code={MultiplyByPowerOfTwoSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="bitmanipulation-divide-power-of-two">
@@ -131,6 +148,7 @@ export default function BitManipulation() {
                     <Tabs.Tab code={DivideByPowerOfTwoJAVA} language="java" />
                     <Tabs.Tab code={DivideByPowerOfTwoCPP} language="cpp" />
                     <Tabs.Tab code={DivideByPowerOfTwoRuby} language="ruby" />
+                    <Tabs.Tab code={DivideByPowerOfTwoSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="bitmanipulation-check-power-of-two">
@@ -140,6 +158,7 @@ export default function BitManipulation() {
                     <Tabs.Tab code={CheckPowerOfTwoJAVA} language="java" />
                     <Tabs.Tab code={CheckPowerOfTwoCPP} language="cpp" />
                     <Tabs.Tab code={CheckPowerOfTwoRuby} language="ruby" />
+                    <Tabs.Tab code={CheckPowerOfTwoSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="bitmanipulation-swap-variables">
@@ -149,6 +168,7 @@ export default function BitManipulation() {
                     <Tabs.Tab code={SwapVariablesJAVA} language="java" />
                     <Tabs.Tab code={SwapVariablesCPP} language="cpp" />
                     <Tabs.Tab code={SwapVariablesRuby} language="ruby" />
+                    <Tabs.Tab code={SwapVariablesSwift} language="swift" />
                 </Tabs>
             </section>
         </div>

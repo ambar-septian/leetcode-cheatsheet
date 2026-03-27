@@ -6,7 +6,7 @@ import {
     useEffect,
 } from 'react'
 
-type Language = 'python' | 'javascript' | 'java' | 'cpp' | 'ruby'
+type Language = 'python' | 'javascript' | 'java' | 'cpp' | 'ruby' | 'swift'
 
 interface LanguageContextType {
     selectedLanguage: Language

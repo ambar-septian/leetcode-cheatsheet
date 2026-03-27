@@ -15,7 +15,9 @@ import MonotonicIncreasingStackCPP from '@code/cpp/stack/monotonic_increasing.cp
 import MonotonicDecreasingStackCPP from '@code/cpp/stack/monotonic_decreasing.cpp?raw'
 
 import MonotonicIncreasingStackRuby from '@code/ruby/stack/monotonic_increasing.rb?raw'
+import MonotonicIncreasingStackSwift from '@code/swift/stack/monotonic_increasing.swift?raw'
 import MonotonicDecreasingStackRuby from '@code/ruby/stack/monotonic_decreasing.rb?raw'
+import MonotonicDecreasingStackSwift from '@code/swift/stack/monotonic_decreasing.swift?raw'
 
 export default function Stack() {
     return (
@@ -28,6 +30,7 @@ export default function Stack() {
                     <Tabs.Tab code={MonotonicIncreasingStackJAVA} language="java" />
                     <Tabs.Tab code={MonotonicIncreasingStackCPP} language="cpp" />
                     <Tabs.Tab code={MonotonicIncreasingStackRuby} language="ruby" />
+                    <Tabs.Tab code={MonotonicIncreasingStackSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="stack-monotonic-decreasing">
@@ -37,6 +40,7 @@ export default function Stack() {
                     <Tabs.Tab code={MonotonicDecreasingStackJAVA} language="java" />
                     <Tabs.Tab code={MonotonicDecreasingStackCPP} language="cpp" />
                     <Tabs.Tab code={MonotonicDecreasingStackRuby} language="ruby" />
+                    <Tabs.Tab code={MonotonicDecreasingStackSwift} language="swift" />
                 </Tabs>
             </section>
         </div>

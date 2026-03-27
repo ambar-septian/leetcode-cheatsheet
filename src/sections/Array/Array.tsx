@@ -27,10 +27,15 @@ import PrefixSumCPP from '@code/cpp/array/prefix_sum.cpp?raw'
 import StringBuildingCPP from '@code/cpp/array/string_building.cpp?raw'
 
 import TwoPointersOneInputRuby from '@code/ruby/array/two_pointers_one_input.rb?raw'
+import TwoPointersOneInputSwift from '@code/swift/array/two_pointers_one_input.swift?raw'
 import TwoPointersTwoInputsRuby from '@code/ruby/array/two_pointers_two_inputs.rb?raw'
+import TwoPointersTwoInputsSwift from '@code/swift/array/two_pointers_two_inputs.swift?raw'
 import SlidingWindowRuby from '@code/ruby/array/sliding_window.rb?raw'
+import SlidingWindowSwift from '@code/swift/array/sliding_window.swift?raw'
 import PrefixSumRuby from '@code/ruby/array/prefix_sum.rb?raw'
+import PrefixSumSwift from '@code/swift/array/prefix_sum.swift?raw'
 import StringBuildingRuby from '@code/ruby/array/string_building.rb?raw'
+import StringBuildingSwift from '@code/swift/array/string_building.swift?raw'
 
 export default function Array() {
     return (
@@ -43,6 +48,7 @@ export default function Array() {
                     <Tabs.Tab code={TwoPointersOneInputJAVA} language="java" />
                     <Tabs.Tab code={TwoPointersOneInputCPP} language="cpp" />
                     <Tabs.Tab code={TwoPointersOneInputRuby} language="ruby" />
+                    <Tabs.Tab code={TwoPointersOneInputSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="array-two-pointers-two-inputs">
@@ -52,6 +58,7 @@ export default function Array() {
                     <Tabs.Tab code={TwoPointersTwoInputsJAVA} language="java" />
                     <Tabs.Tab code={TwoPointersTwoInputsCPP} language="cpp" />
                     <Tabs.Tab code={TwoPointersTwoInputsRuby} language="ruby" />
+                    <Tabs.Tab code={TwoPointersTwoInputsSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="array-sliding-window">
@@ -61,6 +68,7 @@ export default function Array() {
                     <Tabs.Tab code={SlidingWindowJAVA} language="java" />
                     <Tabs.Tab code={SlidingWindowCPP} language="cpp" />
                     <Tabs.Tab code={SlidingWindowRuby} language="ruby" />
+                    <Tabs.Tab code={SlidingWindowSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="array-prefix-sum">
@@ -70,6 +78,7 @@ export default function Array() {
                     <Tabs.Tab code={PrefixSumJAVA} language="java" />
                     <Tabs.Tab code={PrefixSumCPP} language="cpp" />
                     <Tabs.Tab code={PrefixSumRuby} language="ruby" />
+                    <Tabs.Tab code={PrefixSumSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="array-string-building">
@@ -79,6 +88,7 @@ export default function Array() {
                     <Tabs.Tab code={StringBuildingJAVA} language="java" />
                     <Tabs.Tab code={StringBuildingCPP} language="cpp" />
                     <Tabs.Tab code={StringBuildingRuby} language="ruby" />
+                    <Tabs.Tab code={StringBuildingSwift} language="swift" />
                 </Tabs>
             </section>
         </div>

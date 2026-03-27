@@ -27,10 +27,15 @@ import GreedyMinimumCPP from '@code/cpp/binary_search/greedy_minimum.cpp?raw'
 import GreedyMaximumCPP from '@code/cpp/binary_search/greedy_maximum.cpp?raw'
 
 import BinarySearchRuby from '@code/ruby/binary_search/binary_search.rb?raw'
+import BinarySearchSwift from '@code/swift/binary_search/binary_search.swift?raw'
 import DuplicateElementsLeftInsertionRuby from '@code/ruby/binary_search/duplicate_elements_left_insertion.rb?raw'
+import DuplicateElementsLeftInsertionSwift from '@code/swift/binary_search/duplicate_elements_left_insertion.swift?raw'
 import DuplicateElementsRightInsertionRuby from '@code/ruby/binary_search/duplicate_elements_right_insertion.rb?raw'
+import DuplicateElementsRightInsertionSwift from '@code/swift/binary_search/duplicate_elements_right_insertion.swift?raw'
 import GreedyMinimumRuby from '@code/ruby/binary_search/greedy_minimum.rb?raw'
+import GreedyMinimumSwift from '@code/swift/binary_search/greedy_minimum.swift?raw'
 import GreedyMaximumRuby from '@code/ruby/binary_search/greedy_maximum.rb?raw'
+import GreedyMaximumSwift from '@code/swift/binary_search/greedy_maximum.swift?raw'
 
 export default function BinarySearch() {
     return (
@@ -43,6 +48,7 @@ export default function BinarySearch() {
                     <Tabs.Tab code={BinarySearchJAVA} language="java" />
                     <Tabs.Tab code={BinarySearchCPP} language="cpp" />
                     <Tabs.Tab code={BinarySearchRuby} language="ruby" />
+                    <Tabs.Tab code={BinarySearchSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="binarysearch-duplicate-elements-left-insertion">
@@ -52,6 +58,7 @@ export default function BinarySearch() {
                     <Tabs.Tab code={DuplicateElementsLeftInsertionJAVA} language="java" />
                     <Tabs.Tab code={DuplicateElementsLeftInsertionCPP} language="cpp" />
                     <Tabs.Tab code={DuplicateElementsLeftInsertionRuby} language="ruby" />
+                    <Tabs.Tab code={DuplicateElementsLeftInsertionSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="binarysearch-duplicate-elements-right-insertion">
@@ -61,6 +68,7 @@ export default function BinarySearch() {
                     <Tabs.Tab code={DuplicateElementsRightInsertionJAVA} language="java" />
                     <Tabs.Tab code={DuplicateElementsRightInsertionCPP} language="cpp" />
                     <Tabs.Tab code={DuplicateElementsRightInsertionRuby} language="ruby" />
+                    <Tabs.Tab code={DuplicateElementsRightInsertionSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="binarysearch-greedy-minimum">
@@ -70,6 +78,7 @@ export default function BinarySearch() {
                     <Tabs.Tab code={GreedyMinimumJAVA} language="java" />
                     <Tabs.Tab code={GreedyMinimumCPP} language="cpp" />
                     <Tabs.Tab code={GreedyMinimumRuby} language="ruby" />
+                    <Tabs.Tab code={GreedyMinimumSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="binarysearch-greedy-maximum">
@@ -79,6 +88,7 @@ export default function BinarySearch() {
                     <Tabs.Tab code={GreedyMaximumJAVA} language="java" />
                     <Tabs.Tab code={GreedyMaximumCPP} language="cpp" />
                     <Tabs.Tab code={GreedyMaximumRuby} language="ruby" />
+                    <Tabs.Tab code={GreedyMaximumSwift} language="swift" />
                 </Tabs>
             </section>
         </div>

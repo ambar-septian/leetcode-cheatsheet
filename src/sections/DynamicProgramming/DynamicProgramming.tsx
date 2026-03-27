@@ -19,8 +19,11 @@ import BottomUpCPP from '@code/cpp/dynamic_programming/bottom_up.cpp?raw'
 import KadaneCPP from '@code/cpp/dynamic_programming/kadane.cpp?raw'
 
 import TopDownRuby from '@code/ruby/dynamic_programming/top_down.rb?raw'
+import TopDownSwift from '@code/swift/dynamic_programming/top_down.swift?raw'
 import BottomUpRuby from '@code/ruby/dynamic_programming/bottom_up.rb?raw'
+import BottomUpSwift from '@code/swift/dynamic_programming/bottom_up.swift?raw'
 import KadaneRuby from '@code/ruby/dynamic_programming/kadane.rb?raw'
+import KadaneSwift from '@code/swift/dynamic_programming/kadane.swift?raw'
 
 export default function DynamicProgramming() {
     return (
@@ -33,6 +36,7 @@ export default function DynamicProgramming() {
                     <Tabs.Tab code={TopDownJAVA} language="java" />
                     <Tabs.Tab code={TopDownCPP} language="cpp" />
                     <Tabs.Tab code={TopDownRuby} language="ruby" />
+                    <Tabs.Tab code={TopDownSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="dp-bottom-up">
@@ -42,6 +46,7 @@ export default function DynamicProgramming() {
                     <Tabs.Tab code={BottomUpJAVA} language="java" />
                     <Tabs.Tab code={BottomUpCPP} language="cpp" />
                     <Tabs.Tab code={BottomUpRuby} language="ruby" />
+                    <Tabs.Tab code={BottomUpSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="dp-kadane">
@@ -51,6 +56,7 @@ export default function DynamicProgramming() {
                     <Tabs.Tab code={KadaneJAVA} language="java" />
                     <Tabs.Tab code={KadaneCPP} language="cpp" />
                     <Tabs.Tab code={KadaneRuby} language="ruby" />
+                    <Tabs.Tab code={KadaneSwift} language="swift" />
                 </Tabs>
             </section>
         </div>

@@ -39,13 +39,21 @@ import KruskalCPP from '@code/cpp/graph/kruskal.cpp?raw'
 import PrimCPP from '@code/cpp/graph/prim.cpp?raw'
 
 import DFSrecursiveRuby from '@code/ruby/graph/dfs_recursive.rb?raw'
+import DFSrecursiveSwift from '@code/swift/graph/dfs_recursive.swift?raw'
 import DFSiterativeRuby from '@code/ruby/graph/dfs_iterative.rb?raw'
+import DFSiterativeSwift from '@code/swift/graph/dfs_iterative.swift?raw'
 import BFSRuby from '@code/ruby/graph/bfs.rb?raw'
+import BFSSwift from '@code/swift/graph/bfs.swift?raw'
 import DijkstraRuby from '@code/ruby/graph/dijkstra.rb?raw'
+import DijkstraSwift from '@code/swift/graph/dijkstra.swift?raw'
 import BellmanFordRuby from '@code/ruby/graph/bellman_ford.rb?raw'
+import BellmanFordSwift from '@code/swift/graph/bellman_ford.swift?raw'
 import KahnRuby from '@code/ruby/graph/kahn.rb?raw'
+import KahnSwift from '@code/swift/graph/kahn.swift?raw'
 import KruskalRuby from '@code/ruby/graph/kruskal.rb?raw'
+import KruskalSwift from '@code/swift/graph/kruskal.swift?raw'
 import PrimRuby from '@code/ruby/graph/prim.rb?raw'
+import PrimSwift from '@code/swift/graph/prim.swift?raw'
 
 export default function Graph() {
     return (
@@ -58,6 +66,7 @@ export default function Graph() {
                     <Tabs.Tab code={DFSrecursiveJAVA} language="java" />
                     <Tabs.Tab code={DFSrecursiveCPP} language="cpp" />
                     <Tabs.Tab code={DFSrecursiveRuby} language="ruby" />
+                    <Tabs.Tab code={DFSrecursiveSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="graph-dfs-iterative">
@@ -67,6 +76,7 @@ export default function Graph() {
                     <Tabs.Tab code={DFSiterativeJAVA} language="java" />
                     <Tabs.Tab code={DFSiterativeCPP} language="cpp" />
                     <Tabs.Tab code={DFSiterativeRuby} language="ruby" />
+                    <Tabs.Tab code={DFSiterativeSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="graph-bfs">
@@ -76,6 +86,7 @@ export default function Graph() {
                     <Tabs.Tab code={BFSJAVA} language="java" />
                     <Tabs.Tab code={BFSCPP} language="cpp" />
                     <Tabs.Tab code={BFSRuby} language="ruby" />
+                    <Tabs.Tab code={BFSSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="graph-dijkstra">
@@ -85,6 +96,7 @@ export default function Graph() {
                     <Tabs.Tab code={DijkstraJAVA} language="java" />
                     <Tabs.Tab code={DijkstraCPP} language="cpp" />
                     <Tabs.Tab code={DijkstraRuby} language="ruby" />
+                    <Tabs.Tab code={DijkstraSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="graph-bellman-ford">
@@ -94,6 +106,7 @@ export default function Graph() {
                     <Tabs.Tab code={BellmanFordJAVA} language="java" />
                     <Tabs.Tab code={BellmanFordCPP} language="cpp" />
                     <Tabs.Tab code={BellmanFordRuby} language="ruby" />
+                    <Tabs.Tab code={BellmanFordSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="graph-kahn">
@@ -103,6 +116,7 @@ export default function Graph() {
                     <Tabs.Tab code={KahnJAVA} language="java" />
                     <Tabs.Tab code={KahnCPP} language="cpp" />
                     <Tabs.Tab code={KahnRuby} language="ruby" />
+                    <Tabs.Tab code={KahnSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="graph-kruskal">
@@ -112,6 +126,7 @@ export default function Graph() {
                     <Tabs.Tab code={KruskalJAVA} language="java" />
                     <Tabs.Tab code={KruskalCPP} language="cpp" />
                     <Tabs.Tab code={KruskalRuby} language="ruby" />
+                    <Tabs.Tab code={KruskalSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="graph-prim">
@@ -121,6 +136,7 @@ export default function Graph() {
                     <Tabs.Tab code={PrimJAVA} language="java" />
                     <Tabs.Tab code={PrimCPP} language="cpp" />
                     <Tabs.Tab code={PrimRuby} language="ruby" />
+                    <Tabs.Tab code={PrimSwift} language="swift" />
                 </Tabs>
             </section>
         </div>

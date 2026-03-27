@@ -11,6 +11,7 @@ import SvgJavascript from '@/icons/Javascript'
 import SvgCpp from '@icons/Cpp'
 import SvgJava from '@/icons/Java'
 import SvgRuby from '@/icons/Ruby'
+import SvgSwift from '@/icons/Swift'
 
 interface TabsProps {
     title: string
@@ -19,7 +20,7 @@ interface TabsProps {
 
 interface TabProps {
     code: string
-    language: 'python' | 'javascript' | 'java' | 'cpp' | 'ruby'
+    language: 'python' | 'javascript' | 'java' | 'cpp' | 'ruby' | 'swift'
 }
 
 const LANGUAGE_ICONS = {
@@ -28,6 +29,7 @@ const LANGUAGE_ICONS = {
     cpp: SvgCpp,
     java: SvgJava,
     ruby: SvgRuby,
+    swift: SvgSwift,
 }
 
 export default function Tabs({ title, children }: TabsProps) {

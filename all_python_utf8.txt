@@ -1,0 +1,1374 @@
+﻿=== D:\Apps\leetcodetemplate\src\code\python\array\prefix_sum.py ===
+def fn(arr):
+    n = len(arr)
+    prefix = [arr[0]]
+
+    for i in range(1, n):
+        prefix.append(prefix[-1] + arr[i])
+
+    return prefix
+
+=== D:\Apps\leetcodetemplate\src\code\python\array\sliding_window.py ===
+def fn(arr):
+    n = len(arr)
+    window = 0
+    left = 0
+    ans = 0
+
+    for right in range(n):
+        # TODO: add arr[right] to window
+
+        while WINDOW_CONDITION_BROKEN:
+            # TODO: remove arr[left] from window
+            left += 1
+
+        # TODO: update ans
+
+    return ans
+
+=== D:\Apps\leetcodetemplate\src\code\python\array\string_building.py ===
+def fn(strs: list[str]):
+    ans = []
+
+    for char in strs:
+        ans.append(char)
+
+    return ''.join(ans)
+
+=== D:\Apps\leetcodetemplate\src\code\python\array\two_pointers_one_input.py ===
+def fn(arr):
+    ans = 0
+    left = 0
+    right = len(arr) - 1
+
+    while left < right:
+        # TODO: logic with left and right
+        if CONDITION:
+            left += 1
+        else:
+            right -= 1
+
+    return ans
+
+=== D:\Apps\leetcodetemplate\src\code\python\array\two_pointers_two_inputs.py ===
+def fn(arr1, arr2):
+    i = 0
+    j = 0
+    ans = 0
+
+    while i < len(arr1) and j < len(arr2):
+        # TODO: logic
+        if CONDITION:
+            i += 1
+        else:
+            j += 1
+
+    while i < len(arr1):
+        # TODO: logic
+        i += 1
+
+    while j < len(arr2):
+        # TODO: logic
+        j += 1
+
+    return ans
+
+=== D:\Apps\leetcodetemplate\src\code\python\backtracking\backtracking.py ===
+def backtrack(curr, OTHER_ARGUMENTS...):
+    if (BASE_CASE):
+        # TODO: modify answer
+        return
+
+    ans = 0
+
+    for (ITERATE_OVER_INPUT):
+        # TODO: modify current state
+        ans += backtrack(curr, OTHER_ARGUMENTS...)
+        # TODO: undo modification of current state
+
+    return ans
+
+=== D:\Apps\leetcodetemplate\src\code\python\binary_search\binary_search.py ===
+def fn(arr, target):
+    left = 0
+    right = len(arr) - 1
+
+    while left <= right:
+        mid = (left + right) // 2
+
+        if arr[mid] == target:
+            # TODO: logic
+            return
+        if arr[mid] > target:
+            right = mid - 1
+        else:
+            left = mid + 1
+
+    return left
+
+=== D:\Apps\leetcodetemplate\src\code\python\binary_search\duplicate_elements_left_insertion.py ===
+def fn(arr, target):
+    left = 0
+    right = len(arr)
+
+    while left < right:
+        mid = (left + right) // 2
+
+        if arr[mid] >= target:
+            right = mid
+        else:
+            left = mid + 1
+
+    return left
+
+=== D:\Apps\leetcodetemplate\src\code\python\binary_search\duplicate_elements_right_insertion.py ===
+def fn(arr, target):
+    left = 0
+    right = len(arr)
+
+    while left < right:
+        mid = (left + right) // 2
+
+        if arr[mid] > target:
+            right = mid
+        else:
+            left = mid + 1
+
+    return left
+
+=== D:\Apps\leetcodetemplate\src\code\python\binary_search\greedy_maximum.py ===
+def fn(arr):
+    def check(x):
+        return BOOLEAN
+
+    left = MINIMUM_POSSIBLE_ANSWER
+    right = MAXIMUM_POSSIBLE_ANSWER
+
+    while left <= right:
+        mid = (left + right) // 2
+
+        if check(mid):
+            left = mid + 1
+        else:
+            right = mid - 1
+
+    return right
+
+=== D:\Apps\leetcodetemplate\src\code\python\binary_search\greedy_minimum.py ===
+def fn(arr):
+    def check(x):
+        return BOOLEAN
+
+    left = MINIMUM_POSSIBLE_ANSWER
+    right = MAXIMUM_POSSIBLE_ANSWER
+
+    while left <= right:
+        mid = (left + right) // 2
+
+        if check(mid):
+            right = mid - 1
+        else:
+            left = mid + 1
+
+    return left
+
+=== D:\Apps\leetcodetemplate\src\code\python\binary_tree\bfs.py ===
+from collections import deque
+
+
+def fn(root):
+    que = deque([root])
+    ans = 0
+
+    while que:
+        current_length = len(que)
+        # TODO: logic for current level
+        for _ in range(current_length):
+            node = que.popleft()
+            # TODO: logic
+            if node.left:
+                que.append(node.left)
+            if node.right:
+                que.append(node.right)
+
+    return ans
+
+=== D:\Apps\leetcodetemplate\src\code\python\binary_tree\dfs_iterative.py ===
+def dfs(root):
+    stack = [root]
+    ans = 0
+
+    while stack:
+        node = stack.pop()
+        # TODO: logic
+        if node.left:
+            stack.append(node.left)
+        if node.right:
+            stack.append(node.right)
+
+    return ans
+
+=== D:\Apps\leetcodetemplate\src\code\python\binary_tree\dfs_recursive.py ===
+def dfs(root):
+    if not root:
+        return
+
+    ans = 0
+
+    # TODO: logic
+    dfs(root.left)
+    dfs(root.right)
+
+    return ans
+
+=== D:\Apps\leetcodetemplate\src\code\python\bit_manipulation\check_power_of_two.py ===
+def is_power_of_two(num: int) -> bool:
+    return (num & (num - 1)) == 0
+
+=== D:\Apps\leetcodetemplate\src\code\python\bit_manipulation\clear_kth_bit.py ===
+def clear_kth_bit(num: int, k: int) -> int:
+    return num & ~(1 << k)
+
+=== D:\Apps\leetcodetemplate\src\code\python\bit_manipulation\count_set_bits.py ===
+def count_set_bits(num: int) -> int:
+    return bin(num).count('1')
+
+=== D:\Apps\leetcodetemplate\src\code\python\bit_manipulation\divide_power_of_two.py ===
+def divide_by_power_of_two(num: int, k: int) -> int:
+    return num >> k
+
+=== D:\Apps\leetcodetemplate\src\code\python\bit_manipulation\get_rightmost_bit.py ===
+def get_rightmost_set_bit(num: int) -> int:
+    return num & -num
+
+=== D:\Apps\leetcodetemplate\src\code\python\bit_manipulation\multiply_power_of_two.py ===
+def multiply_by_power_of_two(num: int, k: int) -> int:
+    return num << k
+
+=== D:\Apps\leetcodetemplate\src\code\python\bit_manipulation\set_kth_bit.py ===
+def set_kth_bit(num: int, k: int) -> int:
+    return num | (1 << k)
+
+=== D:\Apps\leetcodetemplate\src\code\python\bit_manipulation\swap_variables.py ===
+def swap_variables(num1: int, num2: int) -> tuple:
+    num1 ^= num2
+    num2 ^= num1
+    num1 ^= num2
+    return num1, num2
+
+=== D:\Apps\leetcodetemplate\src\code\python\bit_manipulation\test_kth_bit.py ===
+def test_kth_bit(num: int, k: int) -> bool:
+    return num & (1 << k) != 0
+
+=== D:\Apps\leetcodetemplate\src\code\python\bit_manipulation\toggle_kth_bit.py ===
+def toggle_kth_bit(num: int, k: int) -> int:
+    return num ^ (1 << k)
+
+=== D:\Apps\leetcodetemplate\src\code\python\data_structures\array.py ===
+from typing import Any
+
+
+class Array:
+    def __init__(self, size: int) -> None:
+        self.size = size
+        self.data = [None] * size
+
+    def __getitem__(self, index: int) -> Any:
+        return self.data[index]
+
+    def __setitem__(self, index: int, value: Any) -> None:
+        self.data[index] = value
+
+    def __len__(self) -> int:
+        return len(self.data)
+
+    def __repr__(self) -> str:
+        return repr(self.data)
+
+=== D:\Apps\leetcodetemplate\src\code\python\data_structures\binary_search_tree.py ===
+from typing import Any
+
+
+class TreeNode:
+    def __init__(self, data: Any) -> None:
+        self.data = data
+        self.left = None
+        self.right = None
+
+
+class BinarySearchTree:
+    def __init__(self) -> None:
+        self.root = None
+
+    def insert(self, data: Any) -> None:
+        if not self.root:
+            self.root = TreeNode(data)
+        else:
+            self.insert_node(self.root, data)
+
+    def insert_node(self, node: TreeNode | None, data: Any) -> None:
+        if data < node.data:
+            if not node.left:
+                node.left = TreeNode(data)
+            else:
+                self.insert_node(node.left, data)
+        else:
+            if not node.right:
+                node.right = TreeNode(data)
+            else:
+                self.insert_node(node.right, data)
+
+    def __repr__(self) -> str:
+        return 'Empty tree' if not self.root else self._print_tree(self.root, '', True)
+
+    def _print_tree(self, node: TreeNode | None, prefix: str, is_left: bool) -> str:
+        if node is None:
+            return ''
+
+        result = ''
+        result += self._print_tree(node.right, prefix + ('â”‚   ' if is_left else '    '), False)
+        result += prefix + ('â””â”€â”€ ' if is_left else 'â”Œâ”€â”€ ') + str(node.data) + '\n'
+        result += self._print_tree(node.left, prefix + ('    ' if is_left else 'â”‚   '), True)
+
+        return result
+
+=== D:\Apps\leetcodetemplate\src\code\python\data_structures\binary_tree.py ===
+from typing import Any
+
+
+class TreeNode:
+    def __init__(self, data: Any) -> None:
+        self.data = data
+        self.left = None
+        self.right = None
+
+
+class BinaryTree:
+    def __init__(self) -> None:
+        self.root = None
+
+    def insert(self, data: Any) -> None:
+        if not self.root:
+            self.root = TreeNode(data)
+        else:
+            self.insert_node(self.root, data)
+
+    def insert_node(self, node: TreeNode | None, data: Any) -> TreeNode:
+        if not node:
+            return TreeNode(data)
+
+        if not node.left:
+            node.left = TreeNode(data)
+        elif not node.right:
+            node.right = TreeNode(data)
+        else:
+            node.left = self.insert_node(node.left, data)
+
+        return node
+
+    def __repr__(self) -> str:
+        return 'Empty tree' if not self.root else self._print_tree(self.root, '', True)
+
+    def _print_tree(self, node: TreeNode | None, prefix: str, is_left: bool) -> str:
+        if node is None:
+            return ''
+
+        result = ''
+        result += self._print_tree(node.right, prefix + ('â”‚   ' if is_left else '    '), False)
+        result += prefix + ('â””â”€â”€ ' if is_left else 'â”Œâ”€â”€ ') + str(node.data) + '\n'
+        result += self._print_tree(node.left, prefix + ('    ' if is_left else 'â”‚   '), True)
+
+        return result
+
+=== D:\Apps\leetcodetemplate\src\code\python\data_structures\doubly_linked_list.py ===
+from typing import Any
+
+
+class ListNode:
+    def __init__(self, data: Any) -> None:
+        self.data = data
+        self.prev = None
+        self.next = None
+
+    def __repr__(self) -> str:
+        return f'[{self.data}]'
+
+
+class DoublyLinkedList:
+    def __init__(self) -> None:
+        self.head = None
+
+    def append(self, data: Any) -> None:
+        if not self.head:
+            self.head = ListNode(data)
+            return
+
+        curr = self.head
+
+        while curr.next:
+            curr = curr.next
+
+        new_node = ListNode(data)
+        curr.next = new_node
+        new_node.prev = curr
+
+    def delete(self, data: Any) -> None:
+        if not self.head:
+            return
+
+        if self.head.data == data:
+            self.head = self.head.next
+            if self.head:
+                self.head.prev = None
+            return
+
+        curr = self.head
+        while curr:
+            if curr.data == data:
+                prev_node = curr.prev
+                prev_node.next = curr.next
+                if curr.next:
+                    curr.next.prev = prev_node
+                return
+            curr = curr.next
+
+    def reverse(self) -> None:
+        curr = self.head
+        prev = None
+
+        while curr:
+            nxt = curr.next
+            curr.next = prev
+            curr.prev = nxt
+            prev = curr
+            curr = nxt
+
+        self.head = prev
+
+    def __repr__(self) -> str:
+        if not self.head:
+            return 'None'
+
+        nodes = []
+        curr = self.head
+
+        while curr:
+            nodes.append(repr(curr))
+            curr = curr.next
+
+        return ' <-> '.join(nodes) + ' <-> None'
+
+=== D:\Apps\leetcodetemplate\src\code\python\data_structures\graph.py ===
+class Graph:
+    def __init__(self) -> None:
+        self.graph = {}
+
+    def add_vertex(self, vertex: str) -> None:
+        if vertex not in self.graph:
+            self.graph[vertex] = []
+
+    def add_edge(self, a: str, b: str) -> None:
+        self.add_vertex(a)
+        self.add_vertex(b)
+        self.graph[a].append(b)
+        self.graph[b].append(a)
+
+    def get_neighbors(self, vertex: str) -> list[str]:
+        return self.graph.get(vertex, [])
+
+    def __repr__(self) -> str:
+        output = ''
+
+        for vertex, neighbors in self.graph.items():
+            output += f'{vertex} - {' - '.join(neighbors)}\n'
+
+        return output
+
+=== D:\Apps\leetcodetemplate\src\code\python\data_structures\hash_map.py ===
+from typing import Any
+
+
+class HashMap:
+    def __init__(self) -> None:
+        self.size = 100000
+        self.bucket = [None] * self.size
+
+    def _hash(self, key: int) -> int:
+        return hash(key) % self.size
+
+    def __setitem__(self, key: int, value: Any) -> None:
+        self.bucket[self._hash(key)] = value
+
+    def __getitem__(self, key: int) -> Any:
+        return self.bucket[self._hash(key)]
+
+    def __delitem__(self, key: int) -> None:
+        self.bucket[self._hash(key)] = None
+
+=== D:\Apps\leetcodetemplate\src\code\python\data_structures\linked_list.py ===
+from typing import Any
+
+
+class ListNode:
+    def __init__(self, data: Any) -> None:
+        self.data = data
+        self.next = None
+
+    def __repr__(self) -> str:
+        return f'[{self.data}]'
+
+
+class LinkedList:
+    def __init__(self) -> None:
+        self.head = None
+
+    def append(self, data: Any) -> None:
+        if not self.head:
+            self.head = ListNode(data)
+            return
+
+        curr = self.head
+
+        while curr.next:
+            curr = curr.next
+
+        curr.next = ListNode(data)
+
+    def delete(self, data: Any) -> None:
+        if not self.head:
+            return
+
+        if self.head.data == data:
+            self.head = self.head.next
+            return
+
+        prev = None
+        curr = self.head
+
+        while curr:
+            if curr.data == data:
+                prev.next = curr.next
+                return
+
+            prev = curr
+            curr = curr.next
+
+    def reverse(self) -> None:
+        prev = None
+        curr = self.head
+
+        while curr:
+            nxt = curr.next
+            curr.next = prev
+            prev = curr
+            curr = nxt
+
+        self.head = prev
+
+    def __repr__(self) -> str:
+        if not self.head:
+            return 'None'
+
+        nodes = []
+        node = self.head
+
+        while node:
+            nodes.append(repr(node))
+            node = node.next
+
+        return ' -> '.join(nodes) + ' -> None'
+
+=== D:\Apps\leetcodetemplate\src\code\python\data_structures\trie.py ===
+class TrieNode:
+    def __init__(self) -> None:
+        self.children = {}
+        self.is_word = False
+
+
+class Trie:
+    def __init__(self) -> None:
+        self.root = TrieNode()
+
+    def build(self, words: list[str]) -> None:
+        for word in words:
+            self.insert(word)
+
+    def insert(self, word: str) -> None:
+        node = self.root
+
+        for char in word:
+            if char not in node.children:
+                node.children[char] = TrieNode()
+            node = node.children[char]
+
+        node.is_word = True
+
+    def search(self, word: str) -> bool:
+        node = self.root
+
+        for char in word:
+            if char not in node.children:
+                return False
+            node = node.children[char]
+
+        return node.is_word
+
+    def starts_with(self, prefix: str) -> bool:
+        node = self.root
+
+        for char in prefix:
+            if char not in node.children:
+                return False
+            node = node.children[char]
+
+        return True
+
+    def collect_words(self, node: TrieNode, prefix: str) -> list[str]:
+        words = []
+
+        if node.is_word:
+            words.append(prefix)
+
+        for char, child_node in node.children.items():
+            words.extend(self.collect_words(child_node, prefix + char))
+
+        return words
+
+    def __repr__(self) -> str:
+        return 'Trie:\n' + self._print_trie(self.root)
+
+    def _print_trie(self, node: TrieNode | None, level: int = 0, prefix: str = '') -> str:
+        output = ''
+        prefix_str = '    ' * level + prefix
+
+        if not node:
+            return output
+
+        if node.is_word:
+            output += prefix_str + ' â”œâ”€ ' + '(*)' + '\n'
+
+        for i, (char, child_node) in enumerate(node.children.items()):
+            is_last = i == len(node.children) - 1
+            marker = 'â””â”€ ' if is_last else 'â”œâ”€ '
+            output += prefix_str + marker + char + '\n'
+            output += self._print_trie(child_node, level + 1, '    â”‚' if not is_last else '     ')
+
+        return output
+
+=== D:\Apps\leetcodetemplate\src\code\python\data_structures\union_find.py ===
+class UnionFind:
+    def __init__(self, n: int) -> None:
+        self.root = list(range(n))
+
+    def find(self, a: int) -> int:
+        return a if a == self.root[a] else self.find(self.root[a])
+
+    def union(self, a: int, b: int) -> None:
+        self.root[self.find(a)] = self.find(b)
+
+    def connected(self, a: int, b: int) -> bool:
+        return self.find(a) == self.find(b)
+
+    def __repr__(self) -> str:
+        n = len(self.root)
+        lines = []
+        components = {}
+
+        for i in range(n):
+            root = self.find(i)
+
+            if root not in components:
+                components[root] = []
+
+            components[root].append(i)
+
+        for component in components.values():
+            lines.append(' - '.join(f'({node})' for node in component))
+
+        return '\n'.join(lines)
+
+=== D:\Apps\leetcodetemplate\src\code\python\data_structures\union_find_optimized.py ===
+class UnionFind:
+    def __init__(self, n: int) -> None:
+        self.root = list(range(n))
+        self.rank = [1] * n
+
+    def find(self, a: int) -> int:
+        return a if a == self.root[a] else self.find(self.root[a])
+
+    def union(self, a: int, b: int) -> None:
+        root_a = self.find(a)
+        root_b = self.find(b)
+
+        if root_a != root_b:
+            if self.rank[root_a] < self.rank[root_b]:
+                self.root[root_a] = root_b
+            elif self.rank[root_a] > self.rank[root_b]:
+                self.root[root_b] = root_a
+            else:
+                self.root[root_b] = root_a
+                self.rank[root_a] += 1
+
+    def connected(self, a: int, b: int) -> bool:
+        return self.find(a) == self.find(b)
+
+    def __repr__(self) -> str:
+        n = len(self.root)
+        lines = []
+        components = {}
+
+        for i in range(n):
+            root = self.find(i)
+
+            if root not in components:
+                components[root] = []
+
+            components[root].append(i)
+
+        for component in components.values():
+            lines.append(' - '.join(f'({node})' for node in component))
+
+        return '\n'.join(lines)
+
+=== D:\Apps\leetcodetemplate\src\code\python\dynamic_programming\bottom_up.py ===
+def fn(arr):
+    if BASE_CASE:
+        return 0
+
+    dp = [BASE_CASE] * (STATE_FOR_WHOLE_INPUT + 1)
+
+    for STATE in range(SMALLEST_SUBPROBLEM, STATE_FOR_WHOLE_INPUT + 1):
+        if BASE_CASE:
+            dp[STATE] = BASE_CASE
+        else:
+            dp[STATE] = RECURRENCE_RELATION(STATE)
+
+    return dp[STATE_FOR_WHOLE_INPUT]
+
+=== D:\Apps\leetcodetemplate\src\code\python\dynamic_programming\kadane.py ===
+def kadane(arr: list[int]) -> int:
+    curr_sub = max_sub = arr[0]
+
+    for num in arr[1:]:
+        curr_sub = max(curr_sub + num, num)
+        max_sub = max(max_sub, curr_sub)
+
+    return max_sub
+
+=== D:\Apps\leetcodetemplate\src\code\python\dynamic_programming\top_down.py ===
+def fn(arr):
+    @cache
+    def dp(STATE):
+        if BASE_CASE:
+            return 0
+        return RECURRENCE_RELATION(STATE)
+
+    return dp(STATE_FOR_WHOLE_INPUT)
+
+=== D:\Apps\leetcodetemplate\src\code\python\graph\bellman_ford.py ===
+def bellman_ford(n: int, edges: list[tuple[int, int, int]], source: int) -> list[int]:
+    distances = [float('inf')] * n
+    distances[source] = 0
+
+    for _ in range(n - 1):
+        for u, v, w in edges:
+            if distances[u] != float('inf') and distances[u] + w < distances[v]:
+                distances[v] = distances[u] + w
+
+    for u, v, w in edges:
+        if distances[u] != float('inf') and distances[u] + w < distances[v]:
+            return []
+
+    return distances
+
+=== D:\Apps\leetcodetemplate\src\code\python\graph\bfs.py ===
+from collections import deque
+
+
+def fn(graph):
+    que = deque([START_NODE])
+    seen = {START_NODE}
+    ans = 0
+
+    while que:
+        node = que.popleft()
+        # TODO: logic
+        for neighbor in graph[node]:
+            if neighbor not in seen:
+                seen.add(neighbor)
+                que.append(neighbor)
+
+    return ans
+
+=== D:\Apps\leetcodetemplate\src\code\python\graph\dfs_iterative.py ===
+def fn(graph):
+    stack = [START_NODE]
+    seen = {START_NODE}
+    ans = 0
+
+    while stack:
+        node = stack.pop()
+        # TODO: logic
+        for neighbor in graph[node]:
+            if neighbor not in seen:
+                seen.add(neighbor)
+                stack.append(neighbor)
+
+    return ans
+
+=== D:\Apps\leetcodetemplate\src\code\python\graph\dfs_recursive.py ===
+def fn(graph):
+    def dfs(node):
+        ans = 0
+        # TODO: logic
+        for neighbor in graph[node]:
+            if neighbor not in seen:
+                seen.add(neighbor)
+                ans += dfs(neighbor)
+
+        return ans
+
+    seen = {START_NODE}
+
+    return dfs(START_NODE)
+
+=== D:\Apps\leetcodetemplate\src\code\python\graph\dijkstra.py ===
+from heapq import heappop, heappush
+
+
+def dijkstras(graph: list[list[tuple[int, int]]], source: int) -> list[int]:
+    n = len(graph)
+    distances = [float('inf')] * n
+    distances[source] = 0
+    heap = [(0, source)]
+
+    while heap:
+        curr_dist, node = heappop(heap)
+
+        if curr_dist > distances[node]:
+            continue
+
+        for neighbor, weight in graph[node]:
+            dist = curr_dist + weight
+
+            if dist < distances[neighbor]:
+                distances[neighbor] = dist
+                heappush(heap, (dist, neighbor))
+
+    return distances
+
+=== D:\Apps\leetcodetemplate\src\code\python\graph\kahn.py ===
+from collections import defaultdict, deque
+
+
+def kahn_topological_sort(graph: dict[int, list[int]]) -> list[int]:
+    result = []
+    indegree = defaultdict(int)
+
+    for vertices in graph.values():
+        for v in vertices:
+            indegree[v] += 1
+
+    que = deque([node for node in graph if not indegree[node]])
+
+    while que:
+        node = que.popleft()
+        result.append(node)
+
+        for neighbor in graph[node]:
+            indegree[neighbor] -= 1
+
+            if not indegree[neighbor]:
+                que.append(neighbor)
+
+    return result if len(result) == len(graph) else []
+
+=== D:\Apps\leetcodetemplate\src\code\python\graph\kruskal.py ===
+def kruskal_mst(n: int, edges: list[tuple[int, int, int]]) -> list[tuple[int, int, int]]:
+    mst = []
+    uf = UnionFind(n)
+    edges.sort()
+
+    for w, u, v in edges:
+        if not uf.connected(u, v):
+            uf.union(u, v)
+            mst.append((w, u, v))
+
+    return mst
+
+=== D:\Apps\leetcodetemplate\src\code\python\graph\prim.py ===
+from heapq import heappop
+
+
+def prim_mst(n: int, edges: list[tuple[int, int, int]]) -> list[tuple[int, int, int]]:
+    mst = []
+    uf = UnionFind(n)
+    edges.sort()
+
+    while edges:
+        w, u, v = heappop(edges)
+
+        if not uf.connected(u, v):
+            uf.union(u, v)
+            mst.append((w, u, v))
+
+    return mst
+
+=== D:\Apps\leetcodetemplate\src\code\python\hash_map\find_number_of_subarrays.py ===
+from collections import defaultdict
+
+
+def fn(arr, k):
+    counts = defaultdict(int)
+    counts[0] = 1
+    ans = curr = 0
+
+    for num in arr:
+        # TODO: logic to change curr
+        ans += counts[curr - k]
+        counts[curr] += 1
+
+    return ans
+
+=== D:\Apps\leetcodetemplate\src\code\python\hash_map\sliding_window.py ===
+def fn(arr):
+    window = set()
+    ans = 0
+    left = 0
+
+    for right, ELEMENT in enumerate(arr):
+        # TODO: add arr[right] to window
+
+        while WINDOW_CONDITION_BROKEN:
+            # TODO: remove arr[left] from window
+            left += 1
+
+        # TODO: update ans
+
+    return ans
+
+=== D:\Apps\leetcodetemplate\src\code\python\heap\find_top_k_elements.py ===
+from heapq import heappop, heappush
+
+
+def fn(arr, k):
+    heap = []
+
+    for num in arr:
+        # TODO: logic to push onto heap according to problem's criteria
+        heappush(heap, (CRITERIA, num))
+
+        if len(heap) > k:
+            heappop(heap)
+
+    return [num for num in heap]
+
+=== D:\Apps\leetcodetemplate\src\code\python\linked_list\fast_and_slow_pointer.py ===
+def fn(head):
+    slow = head
+    fast = head
+    ans = 0
+
+    while fast and fast.next:
+        # TODO: logic
+        slow = slow.next
+        fast = fast.next.next
+
+    return ans
+
+=== D:\Apps\leetcodetemplate\src\code\python\linked_list\reverse_linked_list.py ===
+def fn(head):
+    prev = None
+    curr = head
+
+    while curr:
+        nxt = curr.next
+        curr.next = prev
+        prev = curr
+        curr = nxt
+
+    return prev
+
+=== D:\Apps\leetcodetemplate\src\code\python\matrix\create_copy.py ===
+def fn(matrix: list[list[int]]):
+    r = len(matrix)
+    c = len(matrix[0])
+
+    create_matrix = [[0 for _ in range(c)] for _ in range(r)]
+    copy_matrix = [row[:] for row in matrix]
+
+=== D:\Apps\leetcodetemplate\src\code\python\matrix\diagonals.py ===
+def fn(matrix: list[list[int]]):
+    r = len(matrix)
+    c = len(matrix[0])
+
+    main_diagonal = [matrix[i][i] for i in range(min(r, c))]
+    anti_diagonal = [matrix[i][~i] for i in range(min(r, c))]
+
+=== D:\Apps\leetcodetemplate\src\code\python\matrix\rotate_transpose.py ===
+def fn(matrix: list[list[int]]):
+    r = len(matrix)
+    c = len(matrix[0])
+
+    transpose_tuple = zip(*matrix)
+    transpose = [list(row) for row in transpose_tuple]
+    rotate_left = transpose[::-1]
+    rotate_right = [row[::-1] for row in transpose]
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\bogo_sort.py ===
+import random
+
+
+def bogo_sort(arr: list) -> None:
+    target = sorted(arr)
+
+    while arr != target:
+        random.shuffle(arr)
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\bubble_sort.py ===
+def bubble_sort(arr: list) -> None:
+    n = len(arr)
+
+    for i in range(n):
+        swapped = False
+
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+
+        if not swapped:
+            break
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\bucket_sort.py ===
+def bucket_sort(arr: list) -> list:
+    num_buckets = 10
+    min_num = min(arr)
+    max_num = max(arr)
+    bucket_size = (max_num - min_num) / num_buckets
+    buckets = [[] for _ in range(num_buckets)]
+
+    for num in arr:
+        index = min(int((num - min_num) / bucket_size), num_buckets - 1)
+        buckets[index].append(num)
+
+    return [num for bucket in buckets for num in sorted(bucket)]
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\counting_sort.py ===
+def counting_sort(arr: list) -> list:
+    max_num = max(arr)
+    min_num = min(arr)
+    count_range = max_num - min_num + 1
+    count = [0] * count_range
+    output = [0] * len(arr)
+
+    for num in arr:
+        count[num - min_num] += 1
+
+    for i in range(1, count_range):
+        count[i] += count[i - 1]
+
+    for num in arr[::-1]:
+        output[count[num - min_num] - 1] = num
+        count[num - min_num] -= 1
+
+    return output
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\cube_sort.py ===
+def cube_sort(arr: list, processors: int) -> None:
+    n = len(arr)
+    subarrays = []
+    subarray_size = n // processors
+
+    for i in range(processors):
+        subarray = arr[i * subarray_size : (i + 1) * subarray_size]
+        subarrays.append(subarray)
+
+    for subarray in subarrays:
+        subarray.sort()
+
+    for dimension in range(processors.bit_length() - 1):
+        for i in range(processors):
+            partner = i ^ (1 << dimension)
+            if i < partner:
+                merged = subarrays[i] + subarrays[partner]
+            else:
+                merged = subarrays[partner] + subarrays[i]
+            merged.sort()
+            subarrays[i] = merged[:subarray_size]
+            subarrays[partner] = merged[subarray_size:]
+
+    arr[:] = [num for subarray in subarrays for num in subarray]
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\heap_sort.py ===
+def heap_sort(arr: list) -> list:
+    n = len(arr)
+
+    for i in range(n // 2 - 1, -1, -1):
+        heapify(arr, n, i)
+    for i in range(n - 1, 0, -1):
+        arr[i], arr[0] = arr[0], arr[i]
+        heapify(arr, i, 0)
+
+    return arr
+
+def heapify(arr: list, n: int, i: int) -> None:
+    largest = i
+    left = 2 * i + 1
+    right = 2 * i + 2
+
+    if left < n and arr[left] > arr[largest]:
+        largest = left
+    if right < n and arr[right] > arr[largest]:
+        largest = right
+    if largest != i:
+        arr[i], arr[largest] = arr[largest], arr[i]
+        heapify(arr, n, largest)
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\insertion_sort.py ===
+def insertion_sort(arr: list) -> None:
+    n = len(arr)
+
+    for i in range(1, n):
+        key = arr[i]
+
+        while i > 0 and key < arr[i - 1]:
+            arr[i] = arr[i - 1]
+            i -= 1
+
+        arr[i] = key
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\merge_sort.py ===
+def merge_sort(arr: list) -> list:
+    n = len(arr)
+
+    if n <= 1:
+        return arr
+
+    mid = n // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+
+    return merge(left, right)
+
+def merge(left: list, right: list) -> list:
+    output = []
+
+    while left and right:
+        min_num = left.pop(0) if left[0] <= right[0] else right.pop(0)
+        output.append(min_num)
+
+    output.extend(left)
+    output.extend(right)
+
+    return output
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\pancake_sort.py ===
+def pancake_sort(arr: list) -> None:
+    n = len(arr)
+
+    for size in reversed(range(2, n + 1)):
+        max_idx = find_max_index(arr, size)
+
+        if max_idx != size - 1:
+            flip(arr, max_idx)
+            flip(arr, size - 1)
+
+def flip(arr: list, i: int) -> None:
+    left = 0
+
+    while left < i:
+        arr[left], arr[i] = arr[i], arr[left]
+        left += 1
+        i -= 1
+
+def find_max_index(arr: list, n: int) -> int:
+    max_idx = 0
+
+    for i in range(n):
+        if arr[i] > arr[max_idx]:
+            max_idx = i
+
+    return max_idx
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\quick_sort.py ===
+def quick_sort(arr: list) -> list:
+    n = len(arr)
+
+    if n <= 1:
+        return arr
+
+    pivot = arr[n // 2]
+    left = [x for x in arr if x < pivot]
+    right = [x for x in arr if x > pivot]
+
+    return quick_sort(left) + [pivot] + quick_sort(right)
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\radix_sort.py ===
+def radix_sort(arr: list) -> None:
+    max_val = max(arr)
+    exp = 1
+
+    while max_val // exp > 0:
+        counting_sort(arr, exp)
+        exp *= 10
+
+def counting_sort(arr: list, exp: int) -> None:
+    n = len(arr)
+    output = [0] * n
+    count = [0] * 10
+
+    for i in range(n):
+        idx = arr[i] // exp
+        count[idx % 10] += 1
+
+    for i in range(1, 10):
+        count[i] += count[i - 1]
+
+    i = n - 1
+
+    while i >= 0:
+        idx = arr[i] // exp
+        output[count[idx % 10] - 1] = arr[i]
+        count[idx % 10] -= 1
+        i -= 1
+
+    for i in range(n):
+        arr[i] = output[i]
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\selection_sort.py ===
+def selection_sort(arr: list) -> None:
+    n = len(arr)
+
+    for i in range(n):
+        min_i = i
+
+        for j in range(i + 1, n):
+            if arr[j] < arr[min_i]:
+                min_i = j
+
+        if min_i != i:
+            arr[i], arr[min_i] = arr[min_i], arr[i]
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\shell_sort.py ===
+def shell_sort(arr: list) -> None:
+    n = len(arr)
+    gaps = [701, 301, 132, 57, 23, 10, 4, 1]
+
+    for gap in gaps:
+        for i in range(gap, n):
+            tmp = arr[i]
+            j = i
+
+            while j >= gap and arr[j - gap] > tmp:
+                arr[j] = arr[j - gap]
+                j -= gap
+
+            if j != i:
+                arr[j] = tmp
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\sleep_sort.py ===
+from threading import Thread
+from time import sleep
+
+
+def sleep_sort(arr: list ) -> list:
+    sorted_arr = []
+    threads = []
+
+    for num in arr:
+        thread = Thread(target=snorlax, args=(num, sorted_arr))
+        threads.append(thread)
+
+    for thread in threads:
+        thread.start( )
+
+    for thread in threads:
+        thread.join()
+
+    return sorted_arr
+
+def snorlax(num: float, arr: list) -> None:
+    sleep(num / 1000.0)
+    arr.append(num)
+
+=== D:\Apps\leetcodetemplate\src\code\python\sorting_algorithms\tim_sort.py ===
+def tim_sort(arr: list) -> list:
+    n = len(arr)
+    min_run = 32
+
+    for start in range(0, n, min_run):
+        end = min(start + min_run - 1, n - 1)
+        insertion_sort(arr, start, end)
+
+    size = min_run
+
+    while size < n:
+        for left in range(0, n, 2 * size):
+            mid = min(n - 1, left + size - 1)
+            right = min((left + 2 * size - 1), (n - 1))
+            arr[left : right + 1] = merge(arr[left : mid + 1], arr[mid + 1 : right + 1])
+        size *= 2
+
+    return arr
+
+def insertion_sort(arr: list, left: int, right: int) -> None:
+    for i in range(left + 1, right + 1):
+        key = arr[i]
+
+        while i > 0 and key < arr[i - 1]:
+            arr[i] = arr[i - 1]
+            i -= 1
+
+        arr[i] = key
+
+def merge_sort(arr: list) -> list:
+    n = len(arr)
+
+    if n <= 1:
+        return arr
+
+    mid = n // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+
+    return merge(left, right)
+
+def merge(left: list, right: list) -> list:
+    output = []
+
+    while left and right:
+        min_num = left.pop(0) if left[0] <= right[0] else right.pop(0)
+        output.append(min_num)
+
+    output.extend(left)
+    output.extend(right)
+
+    return output
+
+=== D:\Apps\leetcodetemplate\src\code\python\stack\monotonic_decreasing.py ===
+def fn(arr):
+    stack = []
+    ans = 0
+
+    for num in arr:
+        while stack and stack[-1] < num:
+            # TODO: logic
+            stack.pop()
+        stack.append(num)
+
+    return ans
+
+=== D:\Apps\leetcodetemplate\src\code\python\stack\monotonic_increasing.py ===
+def fn(arr):
+    stack = []
+    ans = 0
+
+    for num in arr:
+        while stack and stack[-1] > num:
+            # TODO: logic
+            stack.pop()
+        stack.append(num)
+
+    return ans
+

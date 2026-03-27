@@ -67,20 +67,35 @@ import SleepSortCPP from '@code/cpp/sorting_algorithms/sleep_sort.cpp?raw'
 import TimSortCPP from '@code/cpp/sorting_algorithms/tim_sort.cpp?raw'
 
 import BogoSortRuby from '@code/ruby/sorting_algorithms/bogo_sort.rb?raw'
+import BogoSortSwift from '@code/swift/sorting_algorithms/bogo_sort.swift?raw'
 import BubbleSortRuby from '@code/ruby/sorting_algorithms/bubble_sort.rb?raw'
+import BubbleSortSwift from '@code/swift/sorting_algorithms/bubble_sort.swift?raw'
 import BucketSortRuby from '@code/ruby/sorting_algorithms/bucket_sort.rb?raw'
+import BucketSortSwift from '@code/swift/sorting_algorithms/bucket_sort.swift?raw'
 import CountingSortRuby from '@code/ruby/sorting_algorithms/counting_sort.rb?raw'
+import CountingSortSwift from '@code/swift/sorting_algorithms/counting_sort.swift?raw'
 import CubeSortRuby from '@code/ruby/sorting_algorithms/cube_sort.rb?raw'
+import CubeSortSwift from '@code/swift/sorting_algorithms/cube_sort.swift?raw'
 import HeapSortRuby from '@code/ruby/sorting_algorithms/heap_sort.rb?raw'
+import HeapSortSwift from '@code/swift/sorting_algorithms/heap_sort.swift?raw'
 import InsertionSortRuby from '@code/ruby/sorting_algorithms/insertion_sort.rb?raw'
+import InsertionSortSwift from '@code/swift/sorting_algorithms/insertion_sort.swift?raw'
 import MergeSortRuby from '@code/ruby/sorting_algorithms/merge_sort.rb?raw'
+import MergeSortSwift from '@code/swift/sorting_algorithms/merge_sort.swift?raw'
 import PancakeSortRuby from '@code/ruby/sorting_algorithms/pancake_sort.rb?raw'
+import PancakeSortSwift from '@code/swift/sorting_algorithms/pancake_sort.swift?raw'
 import QuickSortRuby from '@code/ruby/sorting_algorithms/quick_sort.rb?raw'
+import QuickSortSwift from '@code/swift/sorting_algorithms/quick_sort.swift?raw'
 import RadixSortRuby from '@code/ruby/sorting_algorithms/radix_sort.rb?raw'
+import RadixSortSwift from '@code/swift/sorting_algorithms/radix_sort.swift?raw'
 import SelectionSortRuby from '@code/ruby/sorting_algorithms/selection_sort.rb?raw'
+import SelectionSortSwift from '@code/swift/sorting_algorithms/selection_sort.swift?raw'
 import ShellSortRuby from '@code/ruby/sorting_algorithms/shell_sort.rb?raw'
+import ShellSortSwift from '@code/swift/sorting_algorithms/shell_sort.swift?raw'
 import SleepSortRuby from '@code/ruby/sorting_algorithms/sleep_sort.rb?raw'
+import SleepSortSwift from '@code/swift/sorting_algorithms/sleep_sort.swift?raw'
 import TimSortRuby from '@code/ruby/sorting_algorithms/tim_sort.rb?raw'
+import TimSortSwift from '@code/swift/sorting_algorithms/tim_sort.swift?raw'
 
 export default function Stack() {
     return (
@@ -93,6 +108,7 @@ export default function Stack() {
                     <Tabs.Tab code={BubbleSortJAVA} language="java" />
                     <Tabs.Tab code={BubbleSortCPP} language="cpp" />
                     <Tabs.Tab code={BubbleSortRuby} language="ruby" />
+                    <Tabs.Tab code={BubbleSortSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="sort-selection">
@@ -102,6 +118,7 @@ export default function Stack() {
                     <Tabs.Tab code={SelectionSortJAVA} language="java" />
                     <Tabs.Tab code={SelectionSortCPP} language="cpp" />
                     <Tabs.Tab code={SelectionSortRuby} language="ruby" />
+                    <Tabs.Tab code={SelectionSortSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="sort-insertion">
@@ -111,6 +128,7 @@ export default function Stack() {
                     <Tabs.Tab code={InsertionSortJAVA} language="java" />
                     <Tabs.Tab code={InsertionSortCPP} language="cpp" />
                     <Tabs.Tab code={InsertionSortRuby} language="ruby" />
+                    <Tabs.Tab code={InsertionSortSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="sort-shell">
@@ -120,6 +138,7 @@ export default function Stack() {
                     <Tabs.Tab code={ShellSortJAVA} language="java" />
                     <Tabs.Tab code={ShellSortCPP} language="cpp" />
                     <Tabs.Tab code={ShellSortRuby} language="ruby" />
+                    <Tabs.Tab code={ShellSortSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="sort-merge">
@@ -129,6 +148,7 @@ export default function Stack() {
                     <Tabs.Tab code={MergeSortJAVA} language="java" />
                     <Tabs.Tab code={MergeSortCPP} language="cpp" />
                     <Tabs.Tab code={MergeSortRuby} language="ruby" />
+                    <Tabs.Tab code={MergeSortSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="sort-quick">
@@ -138,6 +158,7 @@ export default function Stack() {
                     <Tabs.Tab code={QuickSortJAVA} language="java" />
                     <Tabs.Tab code={QuickSortCPP} language="cpp" />
                     <Tabs.Tab code={QuickSortRuby} language="ruby" />
+                    <Tabs.Tab code={QuickSortSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="sort-tim">
@@ -147,6 +168,7 @@ export default function Stack() {
                     <Tabs.Tab code={TimSortJAVA} language="java" />
                     <Tabs.Tab code={TimSortCPP} language="cpp" />
                     <Tabs.Tab code={TimSortRuby} language="ruby" />
+                    <Tabs.Tab code={TimSortSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="sort-heap">
@@ -156,6 +178,7 @@ export default function Stack() {
                     <Tabs.Tab code={HeapSortJAVA} language="java" />
                     <Tabs.Tab code={HeapSortCPP} language="cpp" />
                     <Tabs.Tab code={HeapSortRuby} language="ruby" />
+                    <Tabs.Tab code={HeapSortSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="sort-counting">
@@ -165,6 +188,7 @@ export default function Stack() {
                     <Tabs.Tab code={CountingSortJAVA} language="java" />
                     <Tabs.Tab code={CountingSortCPP} language="cpp" />
                     <Tabs.Tab code={CountingSortRuby} language="ruby" />
+                    <Tabs.Tab code={CountingSortSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="sort-bucket">
@@ -174,6 +198,7 @@ export default function Stack() {
                     <Tabs.Tab code={BucketSortJAVA} language="java" />
                     <Tabs.Tab code={BucketSortCPP} language="cpp" />
                     <Tabs.Tab code={BucketSortRuby} language="ruby" />
+                    <Tabs.Tab code={BucketSortSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="sort-radix">
@@ -183,6 +208,7 @@ export default function Stack() {
                     <Tabs.Tab code={RadixSortJAVA} language="java" />
                     <Tabs.Tab code={RadixSortCPP} language="cpp" />
                     <Tabs.Tab code={RadixSortRuby} language="ruby" />
+                    <Tabs.Tab code={RadixSortSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="sort-cube">
@@ -192,6 +218,7 @@ export default function Stack() {
                     <Tabs.Tab code={CubeSortJAVA} language="java" />
                     <Tabs.Tab code={CubeSortCPP} language="cpp" />
                     <Tabs.Tab code={CubeSortRuby} language="ruby" />
+                    <Tabs.Tab code={CubeSortSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="sort-bogo">
@@ -201,6 +228,7 @@ export default function Stack() {
                     <Tabs.Tab code={BogoSortJAVA} language="java" />
                     <Tabs.Tab code={BogoSortCPP} language="cpp" />
                     <Tabs.Tab code={BogoSortRuby} language="ruby" />
+                    <Tabs.Tab code={BogoSortSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="sort-pancake">
@@ -210,6 +238,7 @@ export default function Stack() {
                     <Tabs.Tab code={PancakeSortJAVA} language="java" />
                     <Tabs.Tab code={PancakeSortCPP} language="cpp" />
                     <Tabs.Tab code={PancakeSortRuby} language="ruby" />
+                    <Tabs.Tab code={PancakeSortSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="sort-sleep">
@@ -219,6 +248,7 @@ export default function Stack() {
                     <Tabs.Tab code={SleepSortJAVA} language="java" />
                     <Tabs.Tab code={SleepSortCPP} language="cpp" />
                     <Tabs.Tab code={SleepSortRuby} language="ruby" />
+                    <Tabs.Tab code={SleepSortSwift} language="swift" />
                 </Tabs>
             </section>
         </div>

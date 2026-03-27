@@ -15,7 +15,9 @@ import FastAndSlowPointerCPP from '@code/cpp/linked_list/fast_and_slow_pointer.c
 import ReverseLinkedListCPP from '@code/cpp/linked_list/reverse_linked_list.cpp?raw'
 
 import FastAndSlowPointerRuby from '@code/ruby/linked_list/fast_and_slow_pointer.rb?raw'
+import FastAndSlowPointerSwift from '@code/swift/linked_list/fast_and_slow_pointer.swift?raw'
 import ReverseLinkedListRuby from '@code/ruby/linked_list/reverse_linked_list.rb?raw'
+import ReverseLinkedListSwift from '@code/swift/linked_list/reverse_linked_list.swift?raw'
 
 export default function LinkedList() {
     return (
@@ -28,6 +30,7 @@ export default function LinkedList() {
                     <Tabs.Tab code={FastAndSlowPointerJAVA} language="java" />
                     <Tabs.Tab code={FastAndSlowPointerCPP} language="cpp" />
                     <Tabs.Tab code={FastAndSlowPointerRuby} language="ruby" />
+                    <Tabs.Tab code={FastAndSlowPointerSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="linkedlist-reverse">
@@ -37,6 +40,7 @@ export default function LinkedList() {
                     <Tabs.Tab code={ReverseLinkedListJAVA} language="java" />
                     <Tabs.Tab code={ReverseLinkedListCPP} language="cpp" />
                     <Tabs.Tab code={ReverseLinkedListRuby} language="ruby" />
+                    <Tabs.Tab code={ReverseLinkedListSwift} language="swift" />
                 </Tabs>
             </section>
         </div>

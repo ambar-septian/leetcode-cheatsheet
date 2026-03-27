@@ -19,8 +19,11 @@ import DiagonalsCPP from '@code/cpp/matrix/diagonals.cpp?raw'
 import RotateTransposeCPP from '@code/cpp/matrix/rotate_transpose.cpp?raw'
 
 import CreateCopyRuby from '@code/ruby/matrix/create_copy.rb?raw'
+import CreateCopySwift from '@code/swift/matrix/create_copy.swift?raw'
 import DiagonalsRuby from '@code/ruby/matrix/diagonals.rb?raw'
+import DiagonalsSwift from '@code/swift/matrix/diagonals.swift?raw'
 import RotateTransposeRuby from '@code/ruby/matrix/rotate_transpose.rb?raw'
+import RotateTransposeSwift from '@code/swift/matrix/rotate_transpose.swift?raw'
 
 export default function Matrix() {
     return (
@@ -33,6 +36,7 @@ export default function Matrix() {
                     <Tabs.Tab code={CreateCopyJAVA} language="java" />
                     <Tabs.Tab code={CreateCopyCPP} language="cpp" />
                     <Tabs.Tab code={CreateCopyRuby} language="ruby" />
+                    <Tabs.Tab code={CreateCopySwift} language="swift" />
                 </Tabs>
             </section>
             <section id="matrix-diagonals">
@@ -42,6 +46,7 @@ export default function Matrix() {
                     <Tabs.Tab code={DiagonalsJAVA} language="java" />
                     <Tabs.Tab code={DiagonalsCPP} language="cpp" />
                     <Tabs.Tab code={DiagonalsRuby} language="ruby" />
+                    <Tabs.Tab code={DiagonalsSwift} language="swift" />
                 </Tabs>
             </section>
             <section id="matrix-rotate-transpose">
@@ -51,6 +56,7 @@ export default function Matrix() {
                     <Tabs.Tab code={RotateTransposeJAVA} language="java" />
                     <Tabs.Tab code={RotateTransposeCPP} language="cpp" />
                     <Tabs.Tab code={RotateTransposeRuby} language="ruby" />
+                    <Tabs.Tab code={RotateTransposeSwift} language="swift" />
                 </Tabs>
             </section>
         </div>
