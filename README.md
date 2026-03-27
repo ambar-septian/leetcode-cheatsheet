@@ -3,6 +3,8 @@
 </p>
 
 ## LeetCode Cheatsheet
+> **Note:** This repository is a fork of [jwl-7/leetcode-cheatsheet](https://github.com/jwl-7/leetcode-cheatsheet) that has been specifically updated to provide complete **Swift** programming language support alongside the original languages.
+
 A comprehensive cheatsheet for LeetCode enthusiasts, featuring essential algorithms, data structures, and problem-solving techniques.
 
 ## Features
